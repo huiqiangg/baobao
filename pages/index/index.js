@@ -7,12 +7,26 @@ Page({
     motto: '你好，呆呆',
     userInfo: {},
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
+    value: 0,
+    styles: {
+      line: '#dbdbdb',
+      bginner: '#fbfbfb',
+      bgoutside: '#dbdbdb',
+      lineSelect: '#52b8f5',
+      font: '#404040'
+    }
+  },
+  bindvalue: function (e) {
+    // console.log(e)
+    this.setData({
+      value: e.detail.value
+    })
   },
   //事件处理函数
   bindViewTap: function() {
     wx.navigateTo({
-      url: '../logs/logs'
+      url: '../canvas/canvas'
     })
   },
   onLoad: function () {
