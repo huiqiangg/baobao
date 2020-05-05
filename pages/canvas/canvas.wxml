@@ -17,12 +17,15 @@ styles [object]  // 自定义卡尺颜色  注意： 仅支持 #dbdbdb  或者re
                 }
       
   -->
- <text>身高:{{value}}cm</text> 
+ <text class=''>身高:{{value}}cm</text> 
 <view class='wrap'>
   <scale min="10" max="200" int="{{true}}" step="1" fiexNum="60" single="10" h="50" active="{{val_height}}" styles="{{styles[1]}}" bindvalue="bindvalue"></scale>
 </view>
 
- <text>体重{{value2}}kg</text> 
+ <text>体重:{{value2}}kg</text> 
 <view class='wrap'>
-  <scale min="3" max="150" int="{{true}}" step="1" fiexNum="60" single="10" h="80" active="{{val_weight}}" styles="{{styles[1]}}" bindvalue="bindvalue2"></scale>
+  <scale min="3" max="150" int="{{true}}" step="1" fiexNum="60" single="10" h="50" active="{{val_weight}}" styles="{{styles[1]}}" bindvalue="bindvalue2"></scale>
+</view>
+<view class='wrap'>
+  <button>开始测算</button>
 </view>

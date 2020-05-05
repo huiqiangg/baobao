@@ -8,13 +8,13 @@ Page({
       line: '#dbdbdb',
       bginner: '#fbfbfb',
       bgoutside: '#dbdbdb',
-      lineSelect: '#52b8f5',
+      lineSelect: '#00FFFF',
       font: '#404040'
     }, {
       line: '#dbdbdb',
       bginner: '#fbfbfb',
       bgoutside: '#dbdbdb',
-      lineSelect: '#52b8f5',
+      lineSelect: '#D2691E',
       font: '#404040'
     }]
   },
